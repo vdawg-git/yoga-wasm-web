@@ -1,7 +1,7 @@
-import type { Yoga } from "./wrapAsm.js";
+import type { Yoga } from "./wrapAsm.js"
 
-export * from "./generated/YGEnums.js";
-export * from "./wrapAsm.js";
+export * from "./generated/YGEnums.js"
+export * from "./wrapAsm.js"
 
-declare const yogaInstance: Yoga;
-export default yogaInstance;
+declare const yogaInstance: Yoga
+export default yogaInstance

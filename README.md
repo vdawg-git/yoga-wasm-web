@@ -1,6 +1,6 @@
 # yoga-wasm-web
 
-[Yoga](https://github.com/facebook/yoga) but in WebAssembly and ASM.js. 
+[Yoga](https://github.com/facebook/yoga) but in WebAssembly and ASM.js.
 
 ## Usage
 
@@ -17,7 +17,7 @@ yarn add yoga-wasm-web
 To use the ASM.js build:
 
 ```js
-import initYoga, { ALIGN_CENTER } from 'yoga-wasm-web/asm'
+import initYoga, { ALIGN_CENTER } from "yoga-wasm-web/asm"
 
 const Yoga = initYoga()
 const node = Yoga.Node.create()
@@ -29,11 +29,11 @@ node.setAlignContent(ALIGN_CENTER)
 To use the WASM build (take Node.js as an example):
 
 ```js
-import fs from 'fs'
-import initYoga, { ALIGN_CENTER } from 'yoga-wasm-web'
+import fs from "fs"
+import initYoga, { ALIGN_CENTER } from "yoga-wasm-web"
 
 const Yoga = await initYoga(
-  fs.readFileSync('./node_modules/yoga-wasm-web/dist/yoga.wasm')
+  fs.readFileSync("./node_modules/yoga-wasm-web/dist/yoga.wasm")
 )
 
 const node = Yoga.Node.create()
@@ -41,7 +41,6 @@ node.setAlignContent(ALIGN_CENTER)
 ```
 
 You can use other ways to provide the WASM binary too.
-
 
 ## Contribution
 
